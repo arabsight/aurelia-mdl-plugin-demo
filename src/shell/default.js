@@ -2,7 +2,7 @@ export class Default {
     configureRouter(config, router) {
         config.title = 'Aurelia MDL';
         config.options.pushState = true;
-        config.options.root = '/';
+        config.options.root = '/aurelia-mdl-plugin-demo';
 
         let navStrategy = (instruction) => {
             instruction.config.moduleId = instruction.fragment.slice(1);
