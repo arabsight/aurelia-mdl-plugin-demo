@@ -129,7 +129,7 @@
                     "path": "../node_modules/material-design-lite/dist",
                     "main": "material",
                     "resources": [
-                        "material.css"
+                        "material.pink-deep_purple.min.css"
                     ]
                 }, {
                     "name": "aurelia-mdl-plugin",

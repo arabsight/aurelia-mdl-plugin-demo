@@ -1,3 +1,15 @@
 <template>
-    <h1>${message}</h1>
+
+<require from="material-design-lite/material.pink-deep_purple.min.css"></require>
+<require from="./default.css"></require>
+<require from="./header/navbar"></require>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    <navbar router.bind="router"></navbar>
+
+    <main class="mdl-layout__content">
+        <router-view></router-view>
+    </main>
+</div>
+
 </template>

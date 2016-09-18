@@ -1,0 +1,28 @@
+.is-current {
+    background-color: #e0e0e0;
+    border-left: 3px solid #757575;
+}
+
+.component-example {
+    display: flex;
+    justify-content: center;
+
+    .example-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .caption {
+            margin-top: 25px;
+            color: #757575;
+        }
+    }
+}
+
+h2.title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px;
+    color: #757575;
+    text-transform: uppercase;
+}
