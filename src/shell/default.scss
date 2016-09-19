@@ -19,6 +19,32 @@
     }
 }
 
+.menu-wrapper {
+    min-height: 100px;
+    min-width: 180px;
+    position: relative;
+
+    &.demo-menu__lower-left .bar,
+    &.demo-menu__lower-right .bar {
+        box-sizing: border-box;
+        background: #3F51B5;
+        color: white;
+        width: 100%;
+        padding: 16px;
+    }
+
+    &.demo-menu__lower-right .bar {
+        position: relative;
+        height: 64px;
+    }
+
+    &.demo-menu__lower-right .bar .wrapper {
+        box-sizing: border-box;
+        position: absolute;
+        right: 16px;
+    }
+}
+
 h2.title {
     font-size: 16px;
     font-weight: 500;

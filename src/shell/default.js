@@ -1,8 +1,10 @@
+import { ROOT } from '../config';
+
 export class Default {
     configureRouter(config, router) {
         config.title = 'Aurelia MDL';
         config.options.pushState = true;
-        config.options.root = '/aurelia-mdl-plugin-demo/';
+        config.options.root = ROOT;
 
         let navStrategy = (instruction) => {
             instruction.config.moduleId = instruction.fragment.slice(1);
