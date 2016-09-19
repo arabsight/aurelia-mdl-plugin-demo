@@ -9,6 +9,7 @@
     "license": "MIT",
     "scripts": {
         "start": "au run --watch",
+        "prepush": "au build --env prod",
         "push": "git add --all && git commit -m \"$(date)\" && git push -u origin master"
     },
     "dependencies": {
