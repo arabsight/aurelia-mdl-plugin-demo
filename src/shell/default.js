@@ -1,4 +1,4 @@
-import { ROOT } from '../config';
+import { ROOT, COMPONENTS } from '../config';
 
 export class Default {
     configureRouter(config, router) {
@@ -6,20 +6,17 @@ export class Default {
         config.options.pushState = true;
         config.options.root = ROOT;
 
-        let navStrategy = (instruction) => {
-            instruction.config.moduleId = instruction.fragment.slice(1);
-            instruction.config.href = instruction.fragment;
-        }
-
         config.map([
-            { route: '', name: 'home', moduleId: 'home/home', title:'Home' },
-            { route: 'components/:path', name: 'components', navigationStrategy: navStrategy }
+            { route: '', name: 'home', moduleId: 'home/home', title:'Home' }
         ]);
 
-        // config.mapUnknownRoutes(instruction => {
-        //     console.log(instruction.fragment);
-        //     return instruction.fragment;
-        // });
+        config.mapUnknownRoutes(instruction => {
+            let fragment = instruction.fragment.slice(1);
+            if (COMPONENTS.some(item => fragment.endsWith(item))) {
+                return fragment;
+            }
+            return 'home/home';
+        });
 
         this.router = router;
     }

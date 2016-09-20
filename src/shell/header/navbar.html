@@ -25,7 +25,7 @@
         <nav class="mdl-navigation">
             <a repeat.for="item of components"
                class="mdl-navigation__link mdl-typography--text-uppercase ${ current === item ? 'is-current' : '' }"
-               route-href="route: components; params.bind: { path: item }">
+               href="components/${item}">
                ${ item }
             </a>
         </nav>

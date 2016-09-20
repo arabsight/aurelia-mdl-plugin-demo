@@ -1,3 +1,4 @@
+import { COMPONENTS } from '../../config';
 import { EventAggregator } from 'aurelia-event-aggregator';
 import { inject, bindable, containerless } from 'aurelia-framework';
 
@@ -7,9 +8,7 @@ export class Navbar {
     @bindable router;
     @bindable current;
 
-    components = [
-        'buttons', 'menus', 'loading', 'layout'
-    ];
+    components = COMPONENTS;
 
     constructor(eventAggregator) {
         this.ea = eventAggregator;
