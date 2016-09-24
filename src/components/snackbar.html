@@ -1,0 +1,33 @@
+<template>
+    <h2 class="title">${ title }</h2>
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col component-example">
+            <div class="example-wrapper">
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                        type="button" click.delegate="showSnackbar(snackbar)">Show Snackbar</button>
+
+                <div ref="snackbar" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+                </div>
+
+                <span class="caption mdl-typography--text-center">Snackbar</span>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col component-example">
+            <div class="example-wrapper">
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                        type="button" click.delegate="showToast(toast)">Show Toast</button>
+
+                <div ref="toast" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+                </div>
+
+                <span class="caption mdl-typography--text-center">Toast</span>
+            </div>
+        </div>
+    </div>
+</template>

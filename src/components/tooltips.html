@@ -1,0 +1,46 @@
+<template>
+    <h2 class="title">${ title }</h2>
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col component-example">
+            <div class="example-wrapper">
+                <!-- Simple Tooltip -->
+                <div id="tt1" class="icon material-icons">add</div>
+                <div class="mdl-tooltip" data-mdl-for="tt1">
+                    Follow
+                </div>
+
+                <span class="caption mdl-typography--text-center">Simple</span>
+            </div>
+
+            <div class="example-wrapper">
+                <!-- Large Tooltip -->
+                <div id="tt2" class="icon material-icons">print</div>
+                <div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+                    Print
+                </div>
+                <span class="caption mdl-typography--text-center">Large</span>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col component-example">
+            <div class="example-wrapper">
+                <!-- Rich Tooltip -->
+                <div id="tt3" class="icon material-icons">cloud_upload</div>
+                <div class="mdl-tooltip" data-mdl-for="tt3">
+                    Upload <strong>file.zip</strong>
+                </div>
+                <span class="caption mdl-typography--text-center">Rich</span>
+            </div>
+
+            <div class="example-wrapper">
+                <!-- Multiline Tooltip -->
+                <div id="tt4" class="icon material-icons">share</div>
+                <div class="mdl-tooltip" for="tt4">
+                    Share your content<br>via social media
+                </div>
+                <span class="caption mdl-typography--text-center">Multiline</span>
+            </div>
+        </div>
+    </div>
+</template>

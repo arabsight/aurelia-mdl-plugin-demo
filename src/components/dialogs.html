@@ -1,0 +1,26 @@
+<template>
+    <h2 class="title">${ title }</h2>
+
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col component-example">
+            <div class="example-wrapper">
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                        click.delegate="showDialog(dialog)">Show Dialog</button>
+                <span class="caption mdl-typography--text-center">Simple Dialog</span>
+            </div>
+        </div>
+    </div>
+
+    <dialog class="mdl-dialog" ref="dialog">
+        <h4 class="mdl-dialog__title">Allow data collection?</h4>
+        <div class="mdl-dialog__content">
+          <p>
+            Allowing us to collect data will let us get you the information you want faster.
+          </p>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button" disabled>Agree</button>
+          <button type="button" class="mdl-button close" click.delegate="closeDialog(dialog)">Disagree</button>
+        </div>
+    </dialog>
+</template>
