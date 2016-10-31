@@ -1,5 +1,11 @@
 import environment from './environment';
 
+Promise.config({
+    warnings: {
+        wForgottenReturn: false
+    }
+});
+
 export function configure(aurelia) {
     aurelia.use
         .standardConfiguration()

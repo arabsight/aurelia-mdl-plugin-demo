@@ -1,0 +1,22 @@
+{
+  "name": "change-output",
+  "description": "Change the bundles output dir.",
+  "flags": [
+    {
+      "name": "env",
+      "description": "Sets the build environment.",
+      "type": "string"
+    },
+    {
+      "name": "dir",
+      "description": "New directory for bundles.",
+      "type": "string"
+    }
+    ,
+    {
+      "name": "clean",
+      "description": "Remove the previous directory.",
+      "type": "boolean"
+    }
+  ]
+}
